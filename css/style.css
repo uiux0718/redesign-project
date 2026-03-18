@@ -1,0 +1,79 @@
+/* ABOUT SECTION */
+
+.about {
+  padding: 120px 20px;
+  text-align: center;
+  background: #fafafa;
+}
+
+.about h2 {
+  font-size: 32px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.about-intro {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 80px;
+  line-height: 1.6;
+}
+
+/* SERVICE GRID */
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+
+  max-width: 1000px;
+  margin: auto;
+}
+
+.service {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+}
+
+/* ICON */
+
+.service-icon {
+  width: 90px;
+  height: 90px;
+
+  margin: auto;
+
+  border-radius: 50%;
+
+  background: #f2f2f2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 40px;
+
+  margin-bottom: 20px;
+
+  transition: 0.3s;
+}
+
+.service:hover .service-icon {
+  background: #0f8f3a;
+  color: white;
+}
+
+.service h3 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.service p {
+  font-size: 14px;
+  color: #666;
+}
