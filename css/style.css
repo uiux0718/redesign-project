@@ -1,269 +1,183 @@
-/* [1. Reset & Global] */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  font-family: "Pretendard", sans-serif;
-  background: #f0f0f0;
-  color: #111;
-  min-width: 1280px; /* 데스크톱 전용 가로폭 고정 */
-}
-.wrap {
-  max-width: 1200px;
-  margin: 0 auto;
-  background: #fff;
-  position: relative;
-}
-.container {
-  width: 100%;
-  padding: 0 40px;
-  position: relative;
+  font-family: "Pretendard";
+  background: #eee;
+  min-width: 1280px;
 }
 
-/* [2. HEADER] */
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+/* HEADER */
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 25px 40px;
-  background: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-.header h1 {
-  font-size: 1.2rem;
-  font-weight: 900;
-  letter-spacing: -1px;
-}
-.header nav {
-  display: flex;
-  gap: 40px;
-}
-.header nav a {
-  font-weight: 800;
-  font-size: 0.9rem;
-  text-decoration: none;
-  color: #111;
-}
-.header nav a:hover {
-  color: #3ddc84;
+  padding: 30px 50px;
 }
 
-/* [3. HERO SECTION] */
+/* HERO */
 .hero {
   position: relative;
   height: 600px;
   overflow: hidden;
-  background: #000;
 }
+
 .hero-bg {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.6);
+  opacity: 0.6;
 }
-.hero-content {
+
+.hero-txt {
   position: absolute;
-  bottom: 60px;
   left: 60px;
+  bottom: 80px;
   color: #fff;
-  z-index: 2;
 }
-.hero-content h2 {
-  font-size: 5.5rem;
+
+.hero-txt h2 {
+  font-size: 70px;
   font-weight: 900;
-  line-height: 1;
-  letter-spacing: -3px;
-  margin-bottom: 30px;
 }
-.btns button {
-  padding: 15px 35px;
-  border: none;
-  font-weight: 800;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: 0.3s;
+
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  font-size: 12px;
+  margin-right: 10px;
 }
-.btn-green {
+
+.green {
   background: #3ddc84;
   color: #fff;
 }
-.btn-white {
+.white {
   background: #fff;
-  color: #111;
-  margin-left: 12px;
+  color: #000;
 }
 
-/* [4. ABOUT SECTION] */
+/* ABOUT */
 .about {
   text-align: center;
-  padding: 120px 40px;
+  padding: 100px 0;
 }
-.about h2 {
-  font-size: 2.8rem;
-  font-weight: 900;
-  margin-bottom: 25px;
+
+.about h3 {
+  font-size: 28px;
+  font-weight: 800;
 }
+
 .icons {
   display: flex;
   justify-content: center;
-  gap: 80px;
-  margin-top: 60px;
-}
-.icon-circle {
-  width: 85px;
-  height: 85px;
-  background: #f8f8f8;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 32px;
-  margin-bottom: 15px;
-}
-.icon span {
-  font-weight: 800;
-  font-size: 1rem;
+  gap: 50px;
+  margin-top: 40px;
 }
 
-/* [5. MEMBERS SECTION] - 피그마 레이아웃 완벽 재현 */
+.icons div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+}
+
+.icons span {
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+/* MEMBERS */
 .members {
   position: relative;
-  padding: 150px 0;
-  min-height: 1400px;
-}
-.diagonal-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("assets/images/off team 배경.png") no-repeat center/cover;
-  z-index: 1;
-}
-.members-title {
-  position: relative;
-  z-index: 2;
-  font-size: 2.5rem;
-  font-weight: 900;
-  color: #fff;
-  margin-bottom: 60px;
-}
-.member-grid {
-  position: relative;
-  z-index: 2;
   height: 1000px;
 }
 
-/* 멤버 개별 배치 (image_4206bd.png 좌표 기준) */
-.member {
+/* 대각선 */
+.off-bg {
   position: absolute;
-  width: 195px;
-}
-.member img {
+  bottom: 0;
   width: 100%;
-  height: 265px;
+  height: 500px;
+  background: url("assets/images/off team 배경.png") no-repeat center/cover;
+  z-index: 1;
+}
+
+/* 카드 공통 */
+.card {
+  position: absolute;
+  width: 180px;
+}
+
+.card img {
+  width: 100%;
   border-radius: 20px;
-  object-fit: cover;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-  margin-bottom: 15px;
-}
-.member p {
-  font-weight: 800;
-  font-size: 1.05rem;
-  margin-bottom: 8px;
-}
-.m-btn {
-  display: inline-block;
-  padding: 8px 20px;
-  border-radius: 5px;
-  font-size: 0.75rem;
-  font-weight: 800;
-  text-align: center;
-}
-.btn-m-white {
-  background: #fff;
-  color: #3ddc84;
-}
-.btn-m-green {
-  background: #3ddc84;
-  color: #fff;
 }
 
-.p-mk {
-  top: 520px;
-  left: 0%;
+.card p {
+  margin-top: 10px;
+  font-weight: 700;
 }
-.p-hyojin {
-  top: 320px;
-  left: 21%;
+
+/* ON TEAM */
+.on-team .etion {
+  top: 100px;
+  left: 500px;
 }
-.p-etion {
-  top: 50px;
-  left: 42%;
+.on-team .hyojin {
+  top: 300px;
+  left: 300px;
 }
-.p-seungjun {
-  top: 350px;
-  left: 81%;
+.on-team .mk {
+  top: 500px;
+  left: 100px;
 }
-.p-wyatt {
+
+/* OFF TEAM */
+.off-team .seungjun {
+  top: 400px;
+  left: 800px;
+}
+.off-team .wyatt {
   top: 600px;
-  left: 60%;
+  left: 600px;
 }
-.p-yuto {
-  top: 830px;
-  left: 38%;
+.off-team .yuto {
+  top: 750px;
+  left: 400px;
 }
 
-/* [6. NEWS SECTION] */
+/* NEWS */
 .news {
-  padding: 120px 0;
+  padding: 100px 50px;
 }
-.news h3 {
-  font-size: 2.5rem;
-  font-weight: 900;
-  margin-bottom: 40px;
-}
+
 .news-card {
   display: flex;
-  background: #fff;
   border-radius: 30px;
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
-.news-visual {
-  flex: 1.4;
-  height: 450px;
+
+.visual {
+  flex: 1.5;
 }
-.news-visual img {
+
+.visual img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.news-txt {
-  flex: 1;
-  padding: 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.news-txt h4 {
-  font-size: 1.8rem;
-  font-weight: 900;
-  margin-bottom: 20px;
-}
-.news-txt p {
-  color: #666;
-  line-height: 1.6;
-}
 
-.footer {
-  padding: 60px;
-  text-align: center;
-  background: #f9f9f9;
-  font-size: 0.8rem;
-  color: #999;
+.txt {
+  flex: 1;
+  padding: 50px;
 }
