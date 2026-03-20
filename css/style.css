@@ -2,182 +2,227 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Pretendard", sans-serif;
 }
-
 body {
-  font-family: "Pretendard";
-  background: #eee;
-  min-width: 1280px;
+  min-width: 1200px;
+  background: #fff;
+  overflow-x: hidden;
 }
-
-.wrap {
+.inner {
   width: 1200px;
   margin: 0 auto;
-  background: #fff;
+  position: relative;
 }
 
-/* HEADER */
+/* Header & Hero */
 .header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+.header-inner {
   display: flex;
   justify-content: space-between;
-  padding: 30px 50px;
+  width: 100%;
+  padding: 0 20px;
 }
-
-/* HERO */
 .hero {
-  position: relative;
   height: 600px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
   overflow: hidden;
 }
-
-.hero-bg {
+.hero-video {
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.6;
+  z-index: -1;
+  filter: brightness(0.5);
 }
-
-.hero-txt {
-  position: absolute;
-  left: 60px;
-  bottom: 80px;
-  color: #fff;
-}
-
-.hero-txt h2 {
-  font-size: 70px;
+.hero-text h1 {
+  font-size: 80px;
   font-weight: 900;
+  margin-bottom: 20px;
 }
-
 .btn {
-  display: inline-block;
-  padding: 10px 18px;
-  font-size: 12px;
-  margin-right: 10px;
+  padding: 15px 40px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 800;
+  cursor: pointer;
 }
-
-.green {
+.btn.green {
   background: #3ddc84;
   color: #fff;
-}
-.white {
-  background: #fff;
-  color: #000;
+  margin-right: 15px;
 }
 
-/* ABOUT */
-.about {
-  text-align: center;
-  padding: 100px 0;
-}
-
-.about h3 {
-  font-size: 28px;
-  font-weight: 800;
-}
-
-.icons {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  margin-top: 40px;
-}
-
-.icons div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 24px;
-}
-
-.icons span {
-  font-size: 12px;
-  margin-top: 8px;
-}
-
-/* MEMBERS */
+/* Members Section - 꼬임 해결의 핵심 */
 .members {
-  position: relative;
-  height: 1000px;
+  width: 100%;
+  padding-bottom: 100px;
+}
+.members-container {
+  height: 1400px;
+  margin-top: 50px;
+} /* 충분한 고정 높이 부여 */
+
+.section-title {
+  font-size: 40px;
+  font-weight: 900;
+  padding: 60px 0;
 }
 
-/* 대각선 */
-.off-bg {
+/* 레이어 분리 */
+.bg-layer {
   position: absolute;
-  bottom: 0;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 500px;
-  background: url("assets/images/off team 배경.png") no-repeat center/cover;
+  height: 100%;
   z-index: 1;
+}
+.bg-layer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.label-layer {
+  position: relative;
+  z-index: 5;
+}
+.card-layer {
+  position: relative;
+  z-index: 10;
 }
 
 /* 카드 공통 */
 .card {
   position: absolute;
-  width: 180px;
+  width: 240px;
+  cursor: pointer;
+  transition: 0.3s;
 }
-
 .card img {
   width: 100%;
+  height: 340px;
+  object-fit: cover;
   border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.card span {
+  display: block;
+  margin-top: 15px;
+  font-weight: 800;
+  font-size: 17px;
+}
+.card small {
+  font-weight: 400;
+  color: #777;
 }
 
-.card p {
-  margin-top: 10px;
-  font-weight: 700;
+/* ON TEAM 좌표 */
+.mk {
+  top: 520px;
+  left: 60px;
+}
+.hyojin {
+  top: 280px;
+  left: 350px;
+}
+.etion {
+  top: 40px;
+  left: 640px;
 }
 
-/* ON TEAM */
-.on-team .etion {
-  top: 100px;
-  left: 500px;
+/* OFF TEAM 좌표 */
+.seungjun {
+  top: 320px;
+  left: 920px;
+  color: #fff;
 }
-.on-team .hyojin {
-  top: 300px;
-  left: 300px;
-}
-.on-team .mk {
-  top: 500px;
-  left: 100px;
-}
-
-/* OFF TEAM */
-.off-team .seungjun {
-  top: 400px;
-  left: 800px;
-}
-.off-team .wyatt {
+.wyatt {
   top: 600px;
-  left: 600px;
+  left: 650px;
+  color: #fff;
 }
-.off-team .yuto {
-  top: 750px;
-  left: 400px;
-}
-
-/* NEWS */
-.news {
-  padding: 100px 50px;
+.yuto {
+  top: 880px;
+  left: 380px;
+  color: #fff;
 }
 
-.news-card {
-  display: flex;
-  border-radius: 30px;
-  overflow: hidden;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+.on-label {
+  top: 120px;
+  left: 0;
+}
+.off-label {
+  bottom: 100px;
+  right: 0;
+  color: #fff;
+  text-align: right;
 }
 
-.visual {
-  flex: 1.5;
+/* Footer */
+.footer {
+  background: #111;
+  color: #888;
+  padding: 80px 0;
+}
+.f-logo {
+  color: #fff;
+  margin-bottom: 10px;
 }
 
-.visual img {
+/* Modal 생략 (이전과 동일) */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
 }
-
-.txt {
+.modal-content {
+  background: #fff;
+  width: 800px;
+  height: 450px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 100;
+}
+.profile-flex {
+  display: flex;
+  height: 100%;
+}
+.p-img {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+.p-info {
   flex: 1;
   padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
