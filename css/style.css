@@ -506,6 +506,20 @@ footer {
     line-height: 1.8;
 }
 
+.f-company {
+    color: var(--muted);
+    line-height: 1.8;
+    min-width: 220px;
+}
+
+.f-company h3 {
+    margin: 0 0 10px;
+    font-size: 1rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--secondary);
+}
+
 .f-links {
     display: flex;
     gap: 22px;
