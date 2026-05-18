@@ -1,197 +1,288 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KI ENTERTAINMENT | ONF</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css"
+    />
+  </head>
+  <body>
     <header class="header">
-        <div class="inner header-inner">
-            <a href="#" class="logo">KI ENTERTAINMENT</a>
-            <nav class="gnb">
-                <a href="#notice">NOTICE</a>
-                <a href="#company">COMPANY</a>
-                <a href="#artists">ARTISTS</a>
-                <a href="#news">NEWS</a>
-            </nav>
-        </div>
+      <div class="inner header-inner">
+        <a href="#" class="logo">KI ENTERTAINMENT</a>
+        <nav class="gnb">
+          <a href="#notice">NOTICE</a>
+          <a href="#company">COMPANY</a>
+          <a href="#artists">ARTISTS</a>
+          <a href="#news">NEWS</a>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-overlay"></div>
-            <img src="assets/images/unbroken.gif" alt="ONF Unbroken" class="hero-bg">
-            <div class="inner hero-content">
-                <p class="eyebrow">ONF 9TH MINI ALBUM</p>
-                <h1>Put It Back</h1>
-                <p class="hero-desc">감각적인 비주얼과 강렬한 퍼포먼스로 완성된 ONF의 새로운 무드.</p>
-                <div class="hero-btns">
-                    <button class="btn btn-primary" onclick="openVideo('vha7InCjFpU')">WATCH BEHIND</button>
-                    <button class="btn btn-secondary" onclick="scrollToSection('artists')">VIEW PROFILE</button>
-                </div>
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <img
+          src="assets/images/unbroken.gif"
+          alt="ONF Unbroken"
+          class="hero-bg"
+        />
+        <div class="inner hero-content">
+          <p class="eyebrow">ONF 9TH MINI ALBUM</p>
+          <h1>Put It Back</h1>
+          <p class="hero-desc">
+            감각적인 비주얼과 강렬한 퍼포먼스로 완성된 ONF의 새로운 무드.
+          </p>
+          <div class="hero-btns">
+            <button class="btn btn-primary" onclick="openVideo('vha7InCjFpU')">
+              WATCH BEHIND
+            </button>
+            <button
+              class="btn btn-secondary"
+              onclick="scrollToSection('artists')"
+            >
+              VIEW PROFILE
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="notice" class="section-pane">
+        <div class="inner section-grid">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">NOTICE</p>
+              <h2 class="section-title">LATEST UPDATES</h2>
             </div>
-        </section>
+            <p class="section-subtitle">
+              최신 활동과 공지를 한눈에 확인해보세요.
+            </p>
+          </div>
+          <div class="notice-list">
+            <article class="notice-card">
+              <span class="badge">NEW</span>
+              <h3>UNBROKEN 발매</h3>
+              <p>
+                ONF의 9번째 미니앨범 <strong>UNBROKEN</strong>이 공개되었습니다.
+              </p>
+              <small>2026.05.18</small>
+            </article>
+            <article class="notice-card">
+              <span class="badge">EVENT</span>
+              <h3>팬사인회 일정 안내</h3>
+              <p>새 앨범 발매를 기념한 팬사인회 일정이 공개되었습니다.</p>
+              <small>2026.05.10</small>
+            </article>
+            <article class="notice-card">
+              <span class="badge">NEWS</span>
+              <h3>새로운 뮤직비디오 티저</h3>
+              <p>강렬한 퍼포먼스가 담긴 뮤직비디오 티저가 곧 공개됩니다.</p>
+              <small>2026.05.05</small>
+            </article>
+          </div>
+        </div>
+      </section>
 
-        <section id="notice" class="section-pane">
-            <div class="inner section-grid">
-                <div class="section-head">
-                    <div>
-                        <p class="eyebrow">NOTICE</p>
-                        <h2 class="section-title">LATEST UPDATES</h2>
-                    </div>
-                    <p class="section-subtitle">최신 활동과 공지를 한눈에 확인해보세요.</p>
-                </div>
-                <div class="notice-list">
-                    <article class="notice-card">
-                        <span class="badge">NEW</span>
-                        <h3>UNBROKEN 발매</h3>
-                        <p>ONF의 9번째 미니앨범 <strong>UNBROKEN</strong>이 공개되었습니다.</p>
-                        <small>2026.05.18</small>
-                    </article>
-                    <article class="notice-card">
-                        <span class="badge">EVENT</span>
-                        <h3>팬사인회 일정 안내</h3>
-                        <p>새 앨범 발매를 기념한 팬사인회 일정이 공개되었습니다.</p>
-                        <small>2026.05.10</small>
-                    </article>
-                    <article class="notice-card">
-                        <span class="badge">NEWS</span>
-                        <h3>새로운 뮤직비디오 티저</h3>
-                        <p>강렬한 퍼포먼스가 담긴 뮤직비디오 티저가 곧 공개됩니다.</p>
-                        <small>2026.05.05</small>
-                    </article>
-                </div>
+      <section id="company" class="company">
+        <div class="inner section-grid">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">COMPANY</p>
+              <h2 class="section-title">KI ENTERTAINMENT</h2>
             </div>
-        </section>
-
-        <section id="company" class="company">
-            <div class="inner section-grid">
-                <div class="section-head">
-                    <div>
-                        <p class="eyebrow">COMPANY</p>
-                        <h2 class="section-title">KI ENTERTAINMENT</h2>
-                    </div>
-                    <p class="section-subtitle">ONF가 소속된 기획사의 브랜드 아이덴티티와 음악 철학을 담았습니다.</p>
-                </div>
-                <div class="company-grid">
-                    <div class="company-card">
-                        <h3>브랜드 가치</h3>
-                        <p>음악과 퍼포먼스를 통해 독창적인 세계관을 선보이는 엔터테인먼트 브랜드입니다.</p>
-                    </div>
-                    <div class="company-card">
-                        <h3>ARTIST FOCUS</h3>
-                        <p>아티스트의 개성을 존중하며, 음악적 역량과 무대 완성도를 높이는 방향을 지향합니다.</p>
-                    </div>
-                    <div class="company-card">
-                        <h3>VISUAL DIRECTION</h3>
-                        <p>모던하고 세련된 비주얼을 중심으로, 팬과 아티스트를 연결하는 디자인을 구현합니다.</p>
-                    </div>
-                </div>
+            <p class="section-subtitle">
+              ONF가 소속된 기획사의 브랜드 아이덴티티와 음악 철학을 담았습니다.
+            </p>
+          </div>
+          <div class="company-grid">
+            <div class="company-card">
+              <h3>브랜드 가치</h3>
+              <p>
+                음악과 퍼포먼스를 통해 독창적인 세계관을 선보이는 엔터테인먼트
+                브랜드입니다.
+              </p>
             </div>
-        </section>
-
-        <section id="artists" class="members">
-            <div class="inner members-container">
-                <div class="section-head">
-                    <div>
-                        <p class="eyebrow">ARTISTS</p>
-                        <h2 class="section-title">ONF MEMBERS</h2>
-                    </div>
-                    <p class="section-subtitle">ONF의 ON TEAM과 OFF TEAM 멤버를 소개합니다.</p>
-                </div>
-
-                <div class="label-layer">
-                    <div class="unit-label on-label"><h3>ON TEAM</h3><p>보컬 주력팀</p></div>
-                    <div class="unit-label off-label"><h3>OFF TEAM</h3><p>퍼포먼스 주력팀</p></div>
-                </div>
-
-                <div class="card-layer">
-                    <div class="card" onclick="openProfile('MINKYUN')">
-                        <img src="assets/images/mk.jpg" alt="박민균">
-                        <span>박민균 MINKYUN<br><small>ON 팀 리드보컬</small></span>
-                    </div>
-                    <div class="card" onclick="openProfile('HYOJIN')">
-                        <img src="assets/images/hyojin.jpg" alt="김효진">
-                        <span>김효진 HYOJIN<br><small>ON 팀 메인보컬</small></span>
-                    </div>
-                    <div class="card" onclick="openProfile('E-TION')">
-                        <img src="assets/images/etion.jpg" alt="이창윤">
-                        <span>이창윤 E-TION<br><small>ON 팀 리드보컬</small></span>
-                    </div>
-                    <div class="card" onclick="openProfile('SEUNGJUN')">
-                        <img src="assets/images/seungjun.jpg" alt="이승준">
-                        <span>이승준 SEUNGJUN<br><small>OFF 팀 리더</small></span>
-                    </div>
-                    <div class="card" onclick="openProfile('WYATT')">
-                        <img src="assets/images/wyatt.jpg" alt="와이엇">
-                        <span>와이엇 WYATT<br><small>리드래퍼</small></span>
-                    </div>
-                    <div class="card" onclick="openProfile('YUTO')">
-                        <img src="assets/images/yuto.jpg" alt="유토">
-                        <span>유토 YUTO<br><small>메인댄서</small></span>
-                    </div>
-                </div>
+            <div class="company-card">
+              <h3>ARTIST FOCUS</h3>
+              <p>
+                아티스트의 개성을 존중하며, 음악적 역량과 무대 완성도를 높이는
+                방향을 지향합니다.
+              </p>
             </div>
-        </section>
-
-        <section id="news" class="section-pane">
-            <div class="inner section-grid">
-                <div class="section-head">
-                    <div>
-                        <p class="eyebrow">NEWS</p>
-                        <h2 class="section-title">RECENT STORIES</h2>
-                    </div>
-                    <p class="section-subtitle">ONF의 최신 소식과 활동을 빠르게 확인하세요.</p>
-                </div>
-                <div class="news-grid">
-                    <article class="news-card">
-                        <h3>뮤직비디오 티저 공개</h3>
-                        <p>이번 컴백 콘셉트의 분위기를 드러내는 티저 영상이 공개되었습니다.</p>
-                        <small>2026.05.14</small>
-                    </article>
-                    <article class="news-card">
-                        <h3>콘셉트 포토 공개</h3>
-                        <p>새 앨범의 시그니처 무드를 담은 콘셉트 포토를 공개했습니다.</p>
-                        <small>2026.05.12</small>
-                    </article>
-                    <article class="news-card">
-                        <h3>컴백 스케줄 발표</h3>
-                        <p>ONF의 컴백 일정과 방송 스케줄이 공개되었습니다.</p>
-                        <small>2026.05.08</small>
-                    </article>
-                </div>
+            <div class="company-card">
+              <h3>VISUAL DIRECTION</h3>
+              <p>
+                모던하고 세련된 비주얼을 중심으로, 팬과 아티스트를 연결하는
+                디자인을 구현합니다.
+              </p>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <section id="artists" class="members">
+        <div class="inner members-container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">ARTISTS</p>
+              <h2 class="section-title">ONF MEMBERS</h2>
+            </div>
+            <p class="section-subtitle">
+              ONF의 ON TEAM과 OFF TEAM 멤버를 소개합니다.
+            </p>
+          </div>
+
+          <div class="label-layer">
+            <div class="unit-label on-label">
+              <h3>ON TEAM</h3>
+              <p>보컬 주력팀</p>
+            </div>
+            <div class="unit-label off-label">
+              <h3>OFF TEAM</h3>
+              <p>퍼포먼스 주력팀</p>
+            </div>
+          </div>
+
+          <div class="artist-panels">
+            <div class="onteam-panel">
+              <div class="onteam-panel-head">
+                <p class="eyebrow">VOICE TEAM</p>
+                <h3>Vocal Focus</h3>
+                <p class="panel-desc">
+                  보컬 주력팀 ON TEAM 멤버를 더 깔끔한 화이트 패널로 보여줍니다.
+                </p>
+              </div>
+              <div class="onteam-row">
+                <div class="onteam-card" onclick="openProfile('HYOJIN')">
+                  <img src="assets/images/hyojin.jpg" alt="김효진" />
+                  <span>HYOJIN</span>
+                </div>
+                <div class="onteam-card" onclick="openProfile('E-TION')">
+                  <img src="assets/images/etion.jpg" alt="이창윤" />
+                  <span>E-TION</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="offteam-visual">
+              <div
+                class="offteam-card offteam-yuto"
+                onclick="openProfile('YUTO')"
+              >
+                <img src="assets/images/yuto.jpg" alt="유토" />
+                <span>YUTO</span>
+              </div>
+              <div
+                class="offteam-card offteam-mk"
+                onclick="openProfile('MINKYUN')"
+              >
+                <img src="assets/images/mk.jpg" alt="박민균" />
+                <span>MINKYUN</span>
+              </div>
+              <div
+                class="offteam-card offteam-seungjun"
+                onclick="openProfile('SEUNGJUN')"
+              >
+                <img src="assets/images/seungjun.jpg" alt="이승준" />
+                <span>SEUNGJUN</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-layer">
+            <div class="card" onclick="openProfile('MINKYUN')">
+              <img src="assets/images/mk.jpg" alt="박민균" />
+              <span>박민균 MINKYUN<br /><small>ON 팀 리드보컬</small></span>
+            </div>
+            <div class="card" onclick="openProfile('HYOJIN')">
+              <img src="assets/images/hyojin.jpg" alt="김효진" />
+              <span>김효진 HYOJIN<br /><small>ON 팀 메인보컬</small></span>
+            </div>
+            <div class="card" onclick="openProfile('E-TION')">
+              <img src="assets/images/etion.jpg" alt="이창윤" />
+              <span>이창윤 E-TION<br /><small>ON 팀 리드보컬</small></span>
+            </div>
+            <div class="card" onclick="openProfile('SEUNGJUN')">
+              <img src="assets/images/seungjun.jpg" alt="이승준" />
+              <span>이승준 SEUNGJUN<br /><small>OFF 팀 리더</small></span>
+            </div>
+            <div class="card" onclick="openProfile('WYATT')">
+              <img src="assets/images/wyatt.jpg" alt="와이엇" />
+              <span>와이엇 WYATT<br /><small>리드래퍼</small></span>
+            </div>
+            <div class="card" onclick="openProfile('YUTO')">
+              <img src="assets/images/yuto.jpg" alt="유토" />
+              <span>유토 YUTO<br /><small>메인댄서</small></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="news" class="section-pane">
+        <div class="inner section-grid">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">NEWS</p>
+              <h2 class="section-title">RECENT STORIES</h2>
+            </div>
+            <p class="section-subtitle">
+              ONF의 최신 소식과 활동을 빠르게 확인하세요.
+            </p>
+          </div>
+          <div class="news-grid">
+            <article class="news-card">
+              <h3>뮤직비디오 티저 공개</h3>
+              <p>
+                이번 컴백 콘셉트의 분위기를 드러내는 티저 영상이 공개되었습니다.
+              </p>
+              <small>2026.05.14</small>
+            </article>
+            <article class="news-card">
+              <h3>콘셉트 포토 공개</h3>
+              <p>새 앨범의 시그니처 무드를 담은 콘셉트 포토를 공개했습니다.</p>
+              <small>2026.05.12</small>
+            </article>
+            <article class="news-card">
+              <h3>컴백 스케줄 발표</h3>
+              <p>ONF의 컴백 일정과 방송 스케줄이 공개되었습니다.</p>
+              <small>2026.05.08</small>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="inner footer-inner">
-            <div class="f-info">
-                <h2 class="f-logo">KI ENTERTAINMENT</h2>
-                <p>ONF가 소속된 KI ENTERTAINMENT의 공식 리디자인 페이지입니다.</p>
-            </div>
-            <div class="f-links">
-                <a href="#notice">NOTICE</a>
-                <a href="#company">COMPANY</a>
-                <a href="#artists">ARTISTS</a>
-                <a href="#news">NEWS</a>
-            </div>
+      <div class="inner footer-inner">
+        <div class="f-info">
+          <h2 class="f-logo">KI ENTERTAINMENT</h2>
+          <p>ONF가 소속된 KI ENTERTAINMENT의 공식 리디자인 페이지입니다.</p>
         </div>
+        <div class="f-links">
+          <a href="#notice">NOTICE</a>
+          <a href="#company">COMPANY</a>
+          <a href="#artists">ARTISTS</a>
+          <a href="#news">NEWS</a>
+        </div>
+      </div>
     </footer>
 
     <script>
-        function openVideo(id) {
-            window.open(`https://www.youtube.com/watch?v=${id}`, '_blank');
-        }
-        function openProfile(name) {
-            alert(name + ' 프로필 페이지로 이동합니다.');
-        }
-        function scrollToSection(id) {
-            document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
+      function openVideo(id) {
+        window.open(`https://www.youtube.com/watch?v=${id}`, "_blank");
+      }
+      function openProfile(name) {
+        alert(name + " 프로필 페이지로 이동합니다.");
+      }
+      function scrollToSection(id) {
+        document
+          .getElementById(id)
+          .scrollIntoView({ behavior: "smooth", block: "start" });
+      }
     </script>
-</body>
+  </body>
 </html>
