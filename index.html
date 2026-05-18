@@ -9,33 +9,39 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css"
     />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <meta
+      name="description"
+      content="KI ENTERTAINMENT — 명곡 맛집 ONF가 소속된 기획사"
+    />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
     <header class="header">
       <div class="inner header-inner">
         <a href="#" class="logo">KI ENTERTAINMENT</a>
-        <nav class="gnb">
-          <a href="#notice">NOTICE</a>
-          <a href="#company">COMPANY</a>
+        <nav class="gnb" aria-label="주요 메뉴">
+          <a href="#notice">NOTICE</a>          <a href="#company">COMPANY</a>
           <a href="#artists">ARTISTS</a>
           <a href="#news">NEWS</a>
         </nav>
       </div>
     </header>
 
-    <main>
+    <main id="main-content" role="main">
       <section class="hero">
         <div class="hero-overlay"></div>
         <img
           src="assets/images/unbroken.gif"
           alt="ONF Unbroken"
           class="hero-bg"
+          loading="lazy"
         />
         <div class="inner hero-content">
           <p class="eyebrow">ONF 9TH MINI ALBUM</p>
           <h1>Put It Back</h1>
           <p class="hero-desc">
-            감각적인 비주얼과 강렬한 퍼포먼스로 완성된 ONF의 새로운 무드.
+            감각적인 비주얼과 강렬한 퍼포먼스로 완성된 ONF의 새로운 모습
           </p>
           <div class="hero-btns">
             <button class="btn btn-primary" onclick="openVideo('vha7InCjFpU')">
@@ -129,93 +135,34 @@
           <div class="section-head">
             <div>
               <p class="eyebrow">ARTISTS</p>
-              <h2 class="section-title">ONF MEMBERS</h2>
-            </div>
-            <p class="section-subtitle">
-              ONF의 ON TEAM과 OFF TEAM 멤버를 소개합니다.
-            </p>
-          </div>
-
-          <div class="label-layer">
-            <div class="unit-label on-label">
-              <h3>ON TEAM</h3>
-              <p>보컬 주력팀</p>
-            </div>
-            <div class="unit-label off-label">
-              <h3>OFF TEAM</h3>
-              <p>퍼포먼스 주력팀</p>
-            </div>
-          </div>
-
-          <div class="artist-panels">
-            <div class="onteam-panel">
-              <div class="onteam-panel-head">
-                <p class="eyebrow">VOICE TEAM</p>
-                <h3>Vocal Focus</h3>
-                <p class="panel-desc">
-                  보컬 주력팀 ON TEAM 멤버를 더 깔끔한 화이트 패널로 보여줍니다.
-                </p>
-              </div>
-              <div class="onteam-row">
-                <div class="onteam-card" onclick="openProfile('HYOJIN')">
-                  <img src="assets/images/hyojin.jpg" alt="김효진" />
-                  <span>HYOJIN</span>
-                </div>
-                <div class="onteam-card" onclick="openProfile('E-TION')">
-                  <img src="assets/images/etion.jpg" alt="이창윤" />
-                  <span>E-TION</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="offteam-visual">
-              <div
-                class="offteam-card offteam-yuto"
-                onclick="openProfile('YUTO')"
-              >
-                <img src="assets/images/yuto.jpg" alt="유토" />
-                <span>YUTO</span>
-              </div>
-              <div
-                class="offteam-card offteam-mk"
-                onclick="openProfile('MINKYUN')"
-              >
-                <img src="assets/images/mk.jpg" alt="박민균" />
-                <span>MINKYUN</span>
-              </div>
-              <div
-                class="offteam-card offteam-seungjun"
-                onclick="openProfile('SEUNGJUN')"
-              >
-                <img src="assets/images/seungjun.jpg" alt="이승준" />
-                <span>SEUNGJUN</span>
-              </div>
-            </div>
-          </div>
-
+             
           <div class="card-layer">
-            <div class="card" onclick="openProfile('MINKYUN')">
-              <img src="assets/images/mk.jpg" alt="박민균" />
+            <div class="card">
+              <img src="assets/images/mk.jpg" alt="박민균" loading="lazy" />
               <span>박민균 MINKYUN<br /><small>ON 팀 리드보컬</small></span>
             </div>
-            <div class="card" onclick="openProfile('HYOJIN')">
-              <img src="assets/images/hyojin.jpg" alt="김효진" />
+            <div class="card">
+              <img src="assets/images/hyojin.jpg" alt="김효진" loading="lazy" />
               <span>김효진 HYOJIN<br /><small>ON 팀 메인보컬</small></span>
             </div>
-            <div class="card" onclick="openProfile('E-TION')">
-              <img src="assets/images/etion.jpg" alt="이창윤" />
+            <div class="card">
+              <img src="assets/images/etion.jpg" alt="이창윤" loading="lazy" />
               <span>이창윤 E-TION<br /><small>ON 팀 리드보컬</small></span>
             </div>
-            <div class="card" onclick="openProfile('SEUNGJUN')">
-              <img src="assets/images/seungjun.jpg" alt="이승준" />
+            <div class="card">
+              <img
+                src="assets/images/seungjun.jpg"
+                alt="이승준"
+                loading="lazy"
+              />
               <span>이승준 SEUNGJUN<br /><small>OFF 팀 리더</small></span>
             </div>
-            <div class="card" onclick="openProfile('WYATT')">
-              <img src="assets/images/wyatt.jpg" alt="와이엇" />
+            <div class="card">
+              <img src="assets/images/wyatt.jpg" alt="와이엇" loading="lazy" />
               <span>와이엇 WYATT<br /><small>리드래퍼</small></span>
             </div>
-            <div class="card" onclick="openProfile('YUTO')">
-              <img src="assets/images/yuto.jpg" alt="유토" />
+            <div class="card">
+              <img src="assets/images/yuto.jpg" alt="유토" loading="lazy" />
               <span>유토 YUTO<br /><small>메인댄서</small></span>
             </div>
           </div>
@@ -243,7 +190,7 @@
             </article>
             <article class="news-card">
               <h3>콘셉트 포토 공개</h3>
-              <p>새 앨범의 시그니처 무드를 담은 콘셉트 포토를 공개했습니다.</p>
+              <p>새 앨범의 포토를 공개했습니다.</p>
               <small>2026.05.12</small>
             </article>
             <article class="news-card">
@@ -260,18 +207,11 @@
       <div class="inner footer-inner">
         <div class="f-info">
           <h2 class="f-logo">KI ENTERTAINMENT</h2>
-          <p>ONF가 소속된 KI ENTERTAINMENT의 공식 리디자인 페이지입니다.</p>
         </div>
-        <div class="f-company">
+        <div class="f-company" aria-label="회사 연락처">
           <h3>COMPANY INFO</h3>
-          <p>이메일 : info@kient.co.kr</p>
+          <p>이메일 : <a href="mailto:info@kient.co.kr">info@kient.co.kr</a></p>
           <p>대표번호 : 070-4262-0604~6</p>
-        </div>
-        <div class="f-links">
-          <a href="#notice">NOTICE</a>
-          <a href="#company">COMPANY</a>
-          <a href="#artists">ARTISTS</a>
-          <a href="#news">NEWS</a>
         </div>
       </div>
     </footer>
@@ -279,9 +219,6 @@
     <script>
       function openVideo(id) {
         window.open(`https://www.youtube.com/watch?v=${id}`, "_blank");
-      }
-      function openProfile(name) {
-        alert(name + " 프로필 페이지로 이동합니다.");
       }
       function scrollToSection(id) {
         document
